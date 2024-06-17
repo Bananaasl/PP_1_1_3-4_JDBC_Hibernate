@@ -10,11 +10,11 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
         // реализуйте алгоритм здесь
-        Util.getConnection();
+        Util.getSessionFactory();
         UserService userService = new UserServiceImpl();
         userService.createUsersTable();
         List<User> users = userService.getAllUsers();
-        users.add(new User("Anar", "Aslanov", (byte)22));
+        users.add(new User("Anar", "Aslanov", (byte) 22));
         users.add(new User("Anastasia", "Borovitskay", (byte)22));
         users.add(new User("Andrey", "Ivanov", (byte)25));
         users.add(new User("Ivan", "Ivanov", (byte)21));
